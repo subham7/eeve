@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Eeve Dealership</title>
+
+    <!-- Font Icon -->
+    <link
+      rel="stylesheet"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <img src="images/logo.png" alt="EeVe" class="logo-img" />
+    <div class="booking-content">
+      <div class="booking-image">
+        <img class="booking-img" src="images/xy.jpeg" alt="Booking Image" />
+      </div>
+      <div class="booking-form">
+        <form
+          id="booking-form"
+          method="POST"
+          action="https://formspree.io/rishavbajoria72@gmail.com"
+        >
+          <h2>Apply for Dealership</h2>
+
+          <div class="form-group form-input">
+            <input type="text" name="companyName" id="name" value="" required />
+            <label for="name" class="form-label">Company Name</label>
+          </div>
+
+          <div class="form-group form-input">
+            <input type="text" name="address" id="name" value="" required />
+            <label for="name" class="form-label">Address</label>
+          </div>
+
+          <div class="form-group form-input">
+            <input type="text" name="name" id="name" value="" required />
+            <label for="name" class="form-label">Contact Person</label>
+          </div>
+
+          <div class="form-group form-input">
+            <input type="number" name="phone" id="name" value="" required />
+            <label for="name" class="form-label">Phone</label>
+          </div>
+
+          <div class="form-group form-input">
+            <input type="number" name="landline" id="name" value="" required />
+            <label for="name" class="form-label">Landline</label>
+          </div>
+
+          <div class="form-group form-input">
+            <input type="email" name="email" id="phone" value="" required />
+            <label for="phone" class="form-label">Email</label>
+          </div>
+
+          <div class="form-group form-input">
+            <div class="select-list">
+              <select name="area">
+                <option value="">Apply for Area</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Delhi">Delhi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <br />
+            <button type="submit" class="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
