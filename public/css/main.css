@@ -1,0 +1,11 @@
+.body-wrapper {
+  overflow-x: hidden;
+  width: 100vw;
+}
+.img-wrapper {
+  overflow: hidden;
+}
+.img {
+  height: 100vh;
+  width: auto;
+}

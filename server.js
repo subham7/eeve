@@ -20,7 +20,7 @@ app.get("/", (req, resp) => {
 })
 
 app.get("/test", (req, resp) => {
-  resp.sendFile(path.join(__dirname, "public", "index1.html"))
+  resp.sendFile(path.join(__dirname, "public", "test.html"))
 })
 
 app.listen(port, () => {
