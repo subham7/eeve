@@ -383,6 +383,7 @@ form::-webkit-scrollbar-thumb:hover {
   margin: 20px;
   height: 100px;
   width: auto;
+  z-index: 100;
 }
 
 .form-radio {
