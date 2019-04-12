@@ -386,6 +386,12 @@ form::-webkit-scrollbar-thumb:hover {
   z-index: 100;
 }
 
+@media only screen and (max-width: 600px) {
+  .logo-img {
+    height: 35px;
+  }
+}
+
 .form-radio {
   margin-bottom: 65px;
   padding-top: 20px;
