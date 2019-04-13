@@ -563,7 +563,7 @@ input:-moz-placeholder {
 
 .submit {
   width: auto;
-  background: #edb77d;
+  background: #0176ff;
   color: #fff;
   padding: 15px 43px;
   font-weight: bold;
@@ -574,9 +574,6 @@ input:-moz-placeholder {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   cursor: pointer;
-}
-.submit:hover {
-  background: #e79e50;
 }
 
 ul {
