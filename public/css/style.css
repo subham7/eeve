@@ -377,13 +377,23 @@ form::-webkit-scrollbar-thumb:hover {
   border-bottom-right-radius: 10px; } */
 
 .logo-img {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   margin: 20px;
   height: 100px;
   width: auto;
   z-index: 100;
+}
+
+.form-input {
+  background-color: #111;
+  color: #fff;
+}
+
+.form-input:focus {
+  background-color: #111;
+  color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
@@ -479,16 +489,16 @@ form {
   padding: 20px 70px 20px 70px;
 }
 
-.form-group {
+/* .form-group {
   margin-bottom: 10px;
   position: relative;
 }
 
 .form-input {
   padding-top: 21px;
-}
+} */
 
-.form-label {
+/* .form-label {
   position: absolute;
   transition: 0.25s ease;
   -moz-transition: 0.25s ease;
@@ -549,7 +559,7 @@ input:-ms-input-placeholder {
 }
 input:-moz-placeholder {
   color: #bebebe;
-}
+} */
 
 .submit {
   width: auto;

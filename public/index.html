@@ -23,6 +23,14 @@
       href="fonts/material-icon/css/material-design-iconic-font.min.css"
     />
 
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -40,68 +48,98 @@
         >
           <h2>EeVe Dealership Application</h2>
 
-          <div class="form-group form-input">
-            <input type="text" name="companyName" id="name" value="" required />
-            <label for="name" class="form-label">Company Name</label>
-          </div>
-
-          <div class="form-group form-input">
-            <input type="text" name="address" id="name" value="" required />
-            <label for="name" class="form-label">Address</label>
-          </div>
-
-          <div class="form-group form-input">
-            <input type="text" name="name" id="name" value="" required />
-            <label for="name" class="form-label">Contact Person</label>
-          </div>
-
-          <div class="form-group form-input">
-            <input type="number" name="phone" id="name" value="" required />
-            <label for="name" class="form-label">Phone</label>
-          </div>
-
-          <div class="form-group form-input">
-            <input type="number" name="landline" id="name" value="" required />
-            <label for="name" class="form-label">Landline</label>
-          </div>
-
-          <div class="form-group form-input">
-            <input type="email" name="email" id="phone" value="" required />
-            <label for="phone" class="form-label">Email</label>
-          </div>
-
-          <div class="form-group form-input">
-            <div class="select-list">
-              <select name="state">
-                <option value="">Apply for State</option>
-                <option value="AndhraPradesh">Andhra Pradesh</option>
-                <option value="Bihar">Bihar</option>
-                <option value="Jharkhand">Jharkhand</option>
-                <option value="Odisha">Odisha</option>
-                <option value="WestBengal">West Bengal</option>
-                <option value="Assam">Assam</option>
-                <option value="Chattisgarh">Chattisgarh</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group form-input">
-            <input type="text" name="test" id="phone" value="" required />
-            <label for="phone" class="form-label"
-              >Enter the city/town you want to apply for</label
-            >
-          </div>
-
-          <div class="form-group form-input">
+          <div class="form-group">
+            <label for="companyName">Company Name</label>
             <input
               type="text"
-              name="test"
-              id="phone"
-              value=""
-              style="height: 70px;"
-              required
+              class="form-control form-input form-control-sm"
+              id="companyName"
+              name="companyName"
             />
-            <label for="phone" class="form-label">Message</label>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              class="form-control form-input form-control-sm"
+              id="address"
+              name="address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="name">Contact Person</label>
+            <input
+              type="text"
+              class="form-control form-input form-control-sm"
+              id="name"
+              name="contactPerson"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="number"
+              class="form-control form-input form-control-sm"
+              id="phone"
+              name="phone"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="landline">Landline</label>
+            <input
+              type="number"
+              class="form-control form-input form-control-sm"
+              id="landline"
+              name="landline"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control form-input form-control-sm"
+              id="email"
+              name="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Apply for State</label>
+            <select class="form-control form-input form-control-sm" id="state">
+              <option value=""></option>
+              <option value="AndhraPradesh">Andhra Pradesh</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Odisha">Odisha</option>
+              <option value="WestBengal">West Bengal</option>
+              <option value="Assam">Assam</option>
+              <option value="Chattisgarh">Chattisgarh</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="city">Enter the city/town you want to apply for</label>
+            <input
+              type="text"
+              class="form-control form-input form-control-sm"
+              id="city"
+              name="city"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control form-input"
+              id="message"
+              rows="3"
+              name="message"
+            ></textarea>
           </div>
 
           <div class="form-submit">
@@ -219,6 +257,24 @@
       />
     </noscript>
     <!-- End Facebook Pixel Code -->
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
