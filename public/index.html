@@ -34,6 +34,112 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-127467406-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+      gtag("config", "UA-127467406-2")
+    </script>
+
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict"
+
+      !(function() {
+        var t = (window.driftt = window.drift = window.driftt || [])
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            )
+          ;(t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on"
+            ]),
+            (t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments)
+                return n.unshift(e), t.push(n), t
+              }
+            }),
+            t.methods.forEach(function(e) {
+              t[e] = t.factory(e)
+            }),
+            (t.load = function(t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script")
+              ;(o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js")
+              var i = document.getElementsByTagName("script")[0]
+              i.parentNode.insertBefore(o, i)
+            })
+        }
+      })()
+      drift.SNIPPET_VERSION = "0.3.1"
+      drift.load("vx6pn8rx478k")
+    </script>
+    <!-- End of Async Drift Code -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = "2.0"
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      )
+      fbq("init", "659746651123078")
+      fbq("track", "PageView")
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=659746651123078&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <img src="images/logo.png" alt="EeVe" class="logo-img" />
@@ -155,112 +261,6 @@
     </div>
 
     <!-- JS -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-127467406-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
-      gtag("config", "UA-127467406-2")
-    </script>
-
-    <!-- Start of Async Drift Code -->
-    <script>
-      "use strict"
-
-      !(function() {
-        var t = (window.driftt = window.drift = window.driftt || [])
-        if (!t.init) {
-          if (t.invoked)
-            return void (
-              window.console &&
-              console.error &&
-              console.error("Drift snippet included twice.")
-            )
-          ;(t.invoked = !0),
-            (t.methods = [
-              "identify",
-              "config",
-              "track",
-              "reset",
-              "debug",
-              "show",
-              "ping",
-              "page",
-              "hide",
-              "off",
-              "on"
-            ]),
-            (t.factory = function(e) {
-              return function() {
-                var n = Array.prototype.slice.call(arguments)
-                return n.unshift(e), t.push(n), t
-              }
-            }),
-            t.methods.forEach(function(e) {
-              t[e] = t.factory(e)
-            }),
-            (t.load = function(t) {
-              var e = 3e5,
-                n = Math.ceil(new Date() / e) * e,
-                o = document.createElement("script")
-              ;(o.type = "text/javascript"),
-                (o.async = !0),
-                (o.crossorigin = "anonymous"),
-                (o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js")
-              var i = document.getElementsByTagName("script")[0]
-              i.parentNode.insertBefore(o, i)
-            })
-        }
-      })()
-      drift.SNIPPET_VERSION = "0.3.1"
-      drift.load("vx6pn8rx478k")
-    </script>
-    <!-- End of Async Drift Code -->
-
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function(f, b, e, v, n, t, s) {
-        if (f.fbq) return
-        n = f.fbq = function() {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments)
-        }
-        if (!f._fbq) f._fbq = n
-        n.push = n
-        n.loaded = !0
-        n.version = "2.0"
-        n.queue = []
-        t = b.createElement(e)
-        t.async = !0
-        t.src = v
-        s = b.getElementsByTagName(e)[0]
-        s.parentNode.insertBefore(t, s)
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      )
-      fbq("init", "659746651123078")
-      fbq("track", "PageView")
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display:none"
-        src="https://www.facebook.com/tr?id=659746651123078&ev=PageView&noscript=1"
-      />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
 
     <!-- Bootstrap -->
     <script
