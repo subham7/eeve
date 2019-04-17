@@ -23,7 +23,7 @@ app.get("/test", (req, resp) => {
   resp.sendFile(path.join(__dirname, "public", "test.html"))
 })
 
-app.get("/privacy-policy", (req, resp) => {
+app.get("/privacy", (req, resp) => {
   resp.sendFile(path.join(__dirname, "public", "privacy.html"))
 })
 
