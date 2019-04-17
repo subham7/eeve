@@ -23,6 +23,10 @@ app.get("/test", (req, resp) => {
   resp.sendFile(path.join(__dirname, "public", "test.html"))
 })
 
+app.get("/privacy-policy", (req, resp) => {
+  resp.sendFile(path.join(__dirname, "public", "privacy.html"))
+})
+
 app.listen(port, () => {
   console.log(`Server started at ${port}`)
 })
