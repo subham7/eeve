@@ -5,6 +5,7 @@ const compression = require("compression")
 
 var app = express()
 var port = process.env.PORT || 8088
+var val = 0
 
 app.use(compression())
 app.use(bodyParser.json())
@@ -17,6 +18,14 @@ app.use(express.static(path.join(__dirname, "public")))
 
 app.get("/", (req, resp) => {
   resp.sendFile(path.join(__dirname, "public", "index.html"))
+})
+
+app.get("/getValue", (req, res) => {
+  res.status(200).json({ value: val })
+})
+
+app.get("/changeValue/:value", (req, res) => {
+  val = req.params.value
 })
 
 app.get("/test", (req, resp) => {
