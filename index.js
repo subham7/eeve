@@ -26,7 +26,7 @@ app.get("/getValue", (req, res) => {
 
 app.get("/changeValue/:value", (req, res) => {
   val = req.params.value
-  res.status(200)
+  res.status(200).json({val})
 })
 
 app.get("/test", (req, resp) => {
