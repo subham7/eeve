@@ -25,10 +25,9 @@ app.get("/getValue", (req, res) => {
   res.status(200).json({ value: val })
 })
 
-app.post("/changeValue", (req, res) => {
-  val = req.body.value
-  console.log(`/changeValue - ${req.body.value}`)
-  res.status(200).json({ val })
+app.get("/changeValue", (req, res) => {
+  console.log(`got - ${req.query.val}`)
+  res.status(200).json({ value: req.query.val})
 })
 
 app.get("/test", (req, resp) => {
