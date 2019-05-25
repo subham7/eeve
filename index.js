@@ -27,7 +27,7 @@ app.get("/getValue", (req, res) => {
 
 app.post("/changeValue", (req, res) => {
   val = req.body.value
-  console.log(`/changeValue - `)
+  console.log(`/changeValue - ${req.body.value}`)
   res.status(200).json({ val })
 })
 
