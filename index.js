@@ -21,10 +21,12 @@ app.get("/", (req, resp) => {
 })
 
 app.get("/getValue", (req, res) => {
+  console.log(`/getValue - value: ${val}`)
   res.status(200).json({ value: val })
 })
 
 app.get("/changeValue/:value", (req, res) => {
+  console.log(`/changeValue - value: ${val}`)
   val = req.params.value
 })
 
