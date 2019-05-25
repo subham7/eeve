@@ -25,10 +25,10 @@ app.get("/getValue", (req, res) => {
   res.status(200).json({ value: val })
 })
 
-app.get("/changeValue/:value", (req, res) => {
-  console.log(`/changeValue - value: ${val}`)
-  val = req.params.value
-  res.status(200).json({val})
+app.post("/changeValue", (req, res) => {
+  val = req.body.value
+  console.log(`/changeValue - `)
+  res.status(200).json({ val })
 })
 
 app.get("/test", (req, resp) => {
